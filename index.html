@@ -1,13 +1,96 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My First Website</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>INF 132: Scattered</title>
+
+  <!-- external css -->
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <!-- content goes here -->
-    <h1>Hello, World!</h1>
-    <p>This is my first paragraph.</p>
+  <!-- top nav -->
+  <header class="topbar">
+    <div class="topbar-inner">
+      <div class="brand">Scattered</div>
+      <nav class="nav" aria-label="primary">
+        <a href="#understand">Understand</a>
+        <a href="#design">Design</a>
+        <a href="#evaluate">Evaluate</a>
+        <a href="#team">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- hero -->
+  <section class="hero" id="understand">
+    <div class="hero-inner">
+      <h1>INF 132: SCATTERED</h1>
+      <p>Awareness Gaps in Local Communities</p>
+    </div>
+
+    <div class="hero-image-wrap">
+      <div class="hero-image" role="img" aria-label="hero image"></div>
+    </div>
+  </section>
+
+  <!-- topic card -->
+  <section class="topic">
+    <div class="topic-card">
+      <div class="topic-icon"></div>
+      <div>
+        <p class="topic-title">Project Topic</p>
+        <p class="topic-sub">Community &amp; Learning</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- who / what / where -->
+  <main class="section" id="design">
+    <div class="tri-grid">
+      <article class="mini-card">
+        <h3>WHO</h3>
+        <p>Young Adults</p>
+        <div class="mini-media who"></div>
+      </article>
+
+      <article class="mini-card">
+        <h3>WHAT</h3>
+        <p>Lack of awareness about resources available in local communities</p>
+        <div class="mini-media what"></div>
+      </article>
+
+      <article class="mini-card">
+        <h3>WHERE</h3>
+        <p>Local Communities</p>
+        <div class="mini-media where"></div>
+      </article>
+    </div>
+
+    <!-- problem statement -->
+    <section class="block" id="evaluate">
+      <div class="h-row">
+        <div class="h-accent"></div>
+        <h2>Problem statement</h2>
+      </div>
+      <p class="body">
+        Young adults who want to positively impact their community may lack a centralized way to find resources and
+        awareness of issues. This leads to barriers to effecting practical change...
+      </p>
+    </section>
+
+    <!-- motivation -->
+    <section class="block">
+      <div class="h-row">
+        <div class="h-accent"></div>
+        <h2>Motivation</h2>
+      </div>
+      <p class="body">
+        Young adults often want to make a positive impact in their communities but lack a clear, centralized way to
+        discover local issues, resources, and opportunities to get involved...
+      </p>
+    </section>
+  </main>
 </body>
 </html>
