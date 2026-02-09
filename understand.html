@@ -3,4 +3,252 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>INF 132: Scattered</title>
+  <title>Understand | Scattered</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <!-- top header -->
+  <header class="u-top">
+    <div class="u-top-inner">
+      <a class="u-back" href="index.html" aria-label="Back to home">
+        <span class="u-back-arrow">←</span>
+        <span>Back</span>
+      </a>
+
+      <div class="u-title-wrap">
+        <h1 class="u-title">Understand</h1>
+        <p class="u-subtitle">Synthesizing Findings</p>
+      </div>
+
+      <div class="u-top-spacer" aria-hidden="true"></div>
+    </div>
+  </header>
+
+  <main class="u-main">
+    <!-- part 1 -->
+    <section class="u-section">
+      <h2 class="u-h2">Part 1: Competitive Analysis</h2>
+
+      <div class="u-table-wrap" aria-label="competitive analysis matrix">
+        <table class="u-table">
+          <thead>
+            <tr>
+              <th>Direct Competitors</th>
+              <th>Neighbors by Ring</th>
+              <th>NextDoor</th>
+              <th>Turn Up Activism</th>
+              <th>Change.org</th>
+              <th>Citizen</th>
+              <th>Reddit*</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td class="u-rowlabel">Posting local news, events, issues, etc.</td>
+              <td class="u-center"><span class="u-mark u-yes" aria-label="yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+            </tr>
+
+            <tr>
+              <td class="u-rowlabel">Reporting issues</td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no" aria-label="no">✕</span></td>
+            </tr>
+
+            <tr>
+              <td class="u-rowlabel">Search bar</td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+            </tr>
+
+            <tr>
+              <td class="u-rowlabel">Messaging</td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+            </tr>
+
+            <tr>
+              <td class="u-rowlabel">Moderation</td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+            </tr>
+
+            <tr>
+              <td class="u-rowlabel">Discussion/interaction</td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+            </tr>
+
+            <tr>
+              <td class="u-rowlabel">Map</td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+            </tr>
+
+            <tr>
+              <td class="u-rowlabel">Mass notifications</td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-yes">✓</span></td>
+              <td class="u-center"><span class="u-mark u-no">✕</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="u-copy">
+        <h3 class="u-h3">Conclusion</h3>
+        <p>
+          Many existing platforms offer strong core community features such as posting, discussion, and moderation.
+          Some excel in specific areas: Citizen and Neighbors by Ring focus on real-time, map-based alerts; Reddit and
+          NextDoor enable ongoing conversation and search; and Change.org and Turn Up Activism support cause-driven
+          mobilization. Together, these tools show that awareness and discussion are well-established components of
+          digital community spaces.
+        </p>
+        <p>
+          While these platforms are useful, the ecosystem is fragmented. This fragmentation forces users to rely on
+          multiple platforms to stay informed, which can hinder participation in their community. However, there is no
+          single platform that combines awareness, verification, communication, and a pathway to community engagement.
+          No platform seamlessly connects awareness, communication, and meaningful action. Users often need to switch
+          between tools, and most platforms stop at informing or discussing issues rather than guiding next steps. Young
+          adults, in particular, are underserved, as existing solutions skew toward older audiences or isolated forms of
+          engagement. This presents a clear opportunity to create a centralized, youth-centered platform that bridges
+          discovery, connection, and coordinated action, turning concern into tangible community impact.
+        </p>
+      </div>
+    </section>
+
+    <!-- part 2 -->
+    <section class="u-section">
+      <h2 class="u-h2">Part 2: User Interviews</h2>
+
+      <div class="u-card-row">
+        <article class="u-mini-card">
+          <div class="u-card-icon" aria-hidden="true">
+            <!-- users icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" class="u-icon">
+              <path d="M16 11c1.66 0 3-1.57 3-3.5S17.66 4 16 4s-3 1.57-3 3.5S14.34 11 16 11Zm-8 0c1.66 0 3-1.57 3-3.5S9.66 4 8 4 5 5.57 5 7.5 6.34 11 8 11Zm0 2c-2.67 0-8 1.34-8 4v3h10v-3c0-1.2.47-2.2 1.2-3.03C10.02 13.37 8.87 13 8 13Zm8 0c-.6 0-1.36.08-2.17.22C15.07 14.2 16 15.46 16 17v3h8v-3C24 14.34 18.67 13 16 13Z"/>
+            </svg>
+          </div>
+          <h4>Who?</h4>
+          <p>
+            Young adults (primarily college students between the ages of 18–25) who are involved in their communities and
+            want to make a positive impact.
+          </p>
+        </article>
+
+        <article class="u-mini-card">
+          <div class="u-card-icon" aria-hidden="true">
+            <!-- search icon -->
+            <svg viewBox="0 0 24 24" fill="currentColor" class="u-icon">
+              <path d="M15.5 14h-.79l-.28-.27A6.47 6.47 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16a6.47 6.47 0 0 0 4.23-1.57l.27.28v.79L20 21.5 21.5 20 15.5 14ZM9.5 14A4.5 4.5 0 1 1 14 9.5 4.5 4.5 0 0 1 9.5 14Z"/>
+            </svg>
+          </div>
+          <h4>How?</h4>
+          <p>
+            Individual, semi-structured interview sessions with an allotted time of 30 minutes.
+          </p>
+        </article>
+      </div>
+
+      <div class="u-copy">
+        <h3 class="u-h3">Method</h3>
+        <p>
+          To better understand our target audience, each team member conducted one 30-minute semi-structured interview
+          with a college student recruited through our extended networks. No identifying information was collected to
+          ensure participant privacy.
+        </p>
+        <p>
+          We used a prepared question guide with open-ended prompts such as, “How do you stay updated on community
+          events?” and “Do you find it easy or difficult to get involved in causes you care about?” This format allowed
+          for consistency across interviews while giving participants space to share their motivations, frustrations,
+          and experiences. We took detailed notes and captured key quotes to identify patterns in how young adults
+          discover issues, navigate opportunities, and encounter barriers to action. A qualitative approach was selected
+          to better understand the behaviors and perceptions that surveys alone may not reveal.
+        </p>
+      </div>
+    </section>
+
+    <!-- part 3 -->
+    <section class="u-section">
+      <h2 class="u-h2">Part 3: Key Insights</h2>
+
+      <div class="u-insights">
+        <article class="u-insight">
+          <h3 class="u-insight-title">#1: Trust is a prerequisite for action.</h3>
+          <p class="u-insight-body">
+            Young adults are motivated to support causes they care about, but uncertainty around the credibility and
+            legitimacy of organizations prevents them from fully engaging. As one participant shared,
+          </p>
+          <blockquote class="u-quote">
+            <p>“There are a lot of organizations that align with what I care about, but I don’t always know if they’re trustworthy.”</p>
+          </blockquote>
+          <p class="u-insight-foot">
+            Without clear signals of transparency and verification, even interested users hesitate to commit their time or resources.
+          </p>
+        </article>
+
+        <article class="u-insight">
+          <h3 class="u-insight-title">#2: Friction between awareness and action discourages follow-through.</h3>
+          <p class="u-insight-body">
+            Participants consistently described caring about local issues but feeling overwhelmed by the fragmented effort
+            required to get involved. One interviewee explained,
+          </p>
+          <blockquote class="u-quote">
+            <p>“I care, but it feels like I’d have to dig through five different websites just to figure out how to help.”</p>
+          </blockquote>
+          <p class="u-insight-foot">
+            When engagement requires navigating multiple platforms and unclear next steps, motivation diminishes and participation drops.
+          </p>
+        </article>
+
+        <article class="u-insight">
+          <h3 class="u-insight-title">#3: Current information channels are inconsistent and untimely.</h3>
+          <p class="u-insight-body">
+            Most participants rely on social media or word-of-mouth to stay informed, yet they often learn about
+            opportunities too late. As one participant noted,
+          </p>
+          <blockquote class="u-quote">
+            <p>“I feel like there’s always stuff happening, but I only hear about it after it has already passed.”</p>
+          </blockquote>
+          <p class="u-insight-foot">
+            Existing systems do not reliably deliver timely, localized updates, limiting young adults’ ability to engage proactively.
+          </p>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
