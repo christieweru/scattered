@@ -99,9 +99,7 @@ body{
 .back:hover{ color:#111; }
 .back-arrow{ font-size:16px; line-height:1; }
 
-.phead-center{
-  text-align:center;
-}
+.phead-center{ text-align:center; }
 
 .phead-title{
   margin:0;
@@ -118,9 +116,7 @@ body{
 .phead-spacer{ height:1px; }
 
 /* sections */
-.section{
-  padding: 22px 0 0;
-}
+.section{ padding: 22px 0 0; }
 
 .h2{
   margin: 10px 0 12px;
@@ -169,24 +165,24 @@ body{
   gap: 18px;
 }
 
-/* media blocks */
+/* stacked flows */
+.stack{
+  display:grid;
+  gap: 18px;
+}
+
+.flow-head{ margin-bottom: 14px; }
+
+/* =========================
+   IMAGE FIT FIXES (NO CROPPING)
+========================= */
+
 .media{
   margin: 0;
   border-radius: 14px;
-  overflow:hidden;
+  overflow: hidden;
   border: 1px solid rgba(0,0,0,.06);
-  background:#f3f4f6;
-}
-
-.media img{
-  width: 100%;
-  height: 260px;
-  object-fit: cover;
-  display:block;
-}
-
-.media.wide img{
-  height: 320px;
+  background: #ffffff;
 }
 
 .caption{
@@ -197,14 +193,33 @@ body{
   border-top: 1px solid rgba(0,0,0,.06);
 }
 
-/* flow stack */
-.stack{
-  display:grid;
-  gap: 18px;
+/* common image class */
+.img{
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
-.flow-head{
-  margin-bottom: 14px;
+/* storyboards */
+.media:has(.storyboard){
+  padding: 12px;
+  background: #fff;
+}
+
+.img.storyboard{
+  object-fit: contain;
+  max-height: 460px;
+}
+
+/* diagrams (task flows + user flows) */
+.media:has(.diagram){
+  padding: 14px;
+  background: #fff;
+}
+
+.img.diagram{
+  object-fit: contain;
+  max-height: 520px;
 }
 
 /* mockups */
@@ -228,21 +243,22 @@ body{
 
 .mock-media{
   border-radius: 14px;
-  overflow:hidden;
+  overflow: hidden;
   border: 1px solid rgba(0,0,0,.06);
-  background:#f3f4f6;
+  background: #f8fafc;
+  padding: 14px;
+  display: grid;
+  place-items: center;
 }
 
-.mock-media img{
-  width:100%;
-  height: 260px;
-  object-fit: cover;
-  display:block;
+.img.phone{
+  width: auto;
+  height: 320px;
+  max-width: 100%;
+  object-fit: contain;
 }
 
-.mock-copy{
-  padding-top: 6px;
-}
+.mock-copy{ padding-top: 6px; }
 
 /* footer */
 .foot{
@@ -260,13 +276,16 @@ body{
   .brand{ font-size: 36px; }
   .phead-title{ font-size: 36px; }
   .h2{ font-size: 26px; }
+
   .grid-2{ grid-template-columns: 1fr; }
   .mock{ grid-template-columns: 1fr; }
-  .mock-media img{ height: 240px; }
+  .img.phone{ height: 300px; }
 }
 
 @media (max-width: 520px){
   .nav{ gap: 14px; }
   .brand{ font-size: 32px; }
-  .media img{ height: 220px; }
+  .img.diagram{ max-height: 320px; }
+  .img.storyboard{ max-height: 320px; }
+  .img.phone{ height: 290px; }
 }
