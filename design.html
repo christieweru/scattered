@@ -90,12 +90,12 @@
           <h3 class="h3">Task Flow Overview</h3>
           <p class="muted">
             These task flows highlight four core tasks: sharing resources/issues with others, finding a local event,
-            helping others connect through events, and taking action on local issues.
+            helping others connect through events, and taking action on local issues. Click on the image to expand the diagram.
           </p>
         </div>
 
         <figure class="media">
-          <img class="img diagram" src="task-flow.png" alt="Task flow diagram showing core tasks" />
+          <img class="img diagram" src="task.png" alt="Task flow diagram showing core tasks" onclick="openImage(this)" />
           <figcaption class="caption">Task flow diagram</figcaption>
         </figure>
       </div>
@@ -254,5 +254,11 @@
       <p class="foot-muted">Scattered · Design</p>
     </footer>
   </main>
+
+<script>
+function openImage(img){
+  window.open(img.src, '_blank');
+}
+</script>
 </body>
 </html>
