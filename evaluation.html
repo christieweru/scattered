@@ -1,0 +1,164 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Evaluation | BLOC</title>
+  <link rel="stylesheet" href="design.css" />
+</head>
+
+<body>
+  <header class="topbar">
+    <div class="topbar-inner">
+      <a class="brand" href="index.html">BLOC</a>
+
+      <nav class="nav" aria-label="primary">
+        <a href="understand.html">Understand</a>
+        <a href="design.html">Design</a>
+        <a class="is-active" href="evaluation.html">Evaluation</a>
+        <a href="team.html">Team</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="page">
+    <section class="phead">
+      <a class="back" href="index.html" aria-label="Back to home">
+        <span class="back-arrow">←</span> Back
+      </a>
+
+      <div class="phead-center">
+        <h1 class="phead-title">Evaluation</h1>
+        <p class="phead-subtitle">Evaluation Overview</p>
+      </div>
+
+      <div class="phead-spacer" aria-hidden="true"></div>
+    </section>
+
+    <section class="section">
+      <h2 class="h2">Design Process:</h2>
+
+      <div class="card">
+        <div class="card-top">
+          <h3 class="h3">How Our Process Developed Over the Quarter</h3>
+          <p class="muted">
+            Throughout the quarter, our team conducted user research and usability testing on our prototype. Initially, we started out by asking our participants how they remain in-the-know about certain topics in their community. From there, we would synthesize our findings on FigJam and discuss what we learned and what needed to be addressed. Insights from our affinity diagram directly informed our design decisions, allowing us to identify key pain points such as unclear navigation and confusion around certain features.
+          </p>
+        </div>
+
+        <p class="muted">
+          After that, we were able to prototype our design and conduct usability testing sessions with the people that we had previously interviewed. Their feedback, along with our heuristic evaluation, is what guided the iterations that led to the final prototype design we have today.
+        </p>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="h2">Evaluation:</h2>
+      <p class="lead">
+        We evaluated our early ideas through both user testing and heuristic evaluation. These findings helped us identify pain points in the prototype and guided the revisions we made in the final design.
+      </p>
+
+      <div class="grid-2">
+        <article class="card">
+          <div class="card-top">
+            <h3 class="h3">User Testing Findings</h3>
+            <p class="muted">
+              After testing our initial design ideas and early prototype, we found one of the biggest issues to be with our ‘organize’ feature. Several of our participants found that it was too confusing, or it didn’t immediately catch their attention.
+            </p>
+          </div>
+
+          <p class="muted">
+            “She hesitated when navigating between the action buttons, indicating that the action pathways were not immediately obvious.” — Participant feedback
+          </p>
+
+          <br />
+
+          <p class="muted">
+            We also addressed other issues by making our new prototype more clickable and accessible. Many participants shared their frustration when trying to click on certain elements but were not receiving any feedback, so that is something we improved in our updated design.
+          </p>
+        </article>
+
+        <article class="card">
+          <div class="card-top">
+            <h3 class="h3">Heuristic Evaluation Findings</h3>
+            <p class="muted">
+              In addition to user testing, our heuristic evaluation revealed issues with visibility of system status and user control. For example, users were not receiving confirmation after completing actions, and navigation lacked clear feedback.
+            </p>
+          </div>
+
+          <p class="muted">
+            These findings supported what we observed during usability testing and helped guide additional improvements, especially around confirmation states, clearer pathways, and more intuitive interaction cues throughout the interface.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="h2">Affinity Diagrams:</h2>
+
+      <div class="stack">
+        <article class="card flow">
+          <div class="flow-head">
+            <h3 class="h3">Affinity Diagram: User Testing</h3>
+            <p class="muted">
+              This affinity diagram organizes the main findings from our user testing sessions. It highlights recurring feedback related to the homepage, organize feature, messages, and user settings.
+            </p>
+          </div>
+
+          <figure class="media">
+            <img class="img diagram" src="user_testing.png" alt="Affinity diagram showing grouped user testing insights for homepage, organize, messages, and user settings" onclick="openImage(this)" />
+            <figcaption class="caption">User testing affinity diagram</figcaption>
+          </figure>
+        </article>
+
+        <article class="card flow">
+          <div class="flow-head">
+            <h3 class="h3">Affinity Diagram: Heuristic Evaluation</h3>
+            <p class="muted">
+              This affinity diagram summarizes the usability issues identified through our heuristic evaluation, including system visibility, user control, recognition, consistency, and help/documentation.
+            </p>
+          </div>
+
+          <figure class="media">
+            <img class="img diagram" src="heuristic.png" alt="Affinity diagram showing grouped heuristic evaluation findings for homepage, organize, messages, and user settings" onclick="openImage(this)" />
+            <figcaption class="caption">Heuristic evaluation affinity diagram</figcaption>
+          </figure>
+        </article>
+      </div>
+    </section>
+
+    <section class="section">
+      <h2 class="h2">Final Prototype:</h2>
+
+      <div class="card">
+        <div class="card-top">
+          <h3 class="h3">Interactive Final Prototype</h3>
+          <p class="muted">
+            Our final prototype is a high-fidelity, clickable Figma design that reflects the improvements made from both user testing and heuristic evaluation. We focused on making the interface more intuitive by improving navigation, increasing feedback when users interact with elements, and refining the ‘organize’ feature so it is clearer and easier to use.
+          </p>
+        </div>
+
+        <figure class="media">
+          <div class="phone-frame">
+            <iframe
+              src="https://embed.figma.com/proto/SE8rSer3Lz6M1J4YYUkwWr/132-Master-Figma?node-id=616-2691&p=f&scaling=scale-down&content-scaling=fixed&page-id=503%3A1696&starting-point-node-id=616%3A2686&embed-host=share"
+              allowfullscreen>
+            </iframe>
+          </div>
+          <figcaption class="caption">Final prototype embedded from Figma</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <footer class="foot">
+      <p class="foot-muted">BLOC · Evaluation</p>
+    </footer>
+  </main>
+
+  <script>
+    function openImage(img){
+      window.open(img.src, '_blank');
+    }
+  </script>
+</body>
+</html>
